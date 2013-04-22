@@ -1,0 +1,33 @@
+{
+    "name": "hoverpanels",
+    "title": "jQuery Hover Panels",
+    "description": "jQuery plugin for displaying alternate content on hover",
+    "keywords": [
+        "hover",
+        "alternate",
+		"content"
+    ],
+    "version": "2.0",
+    "author": {
+        "name": "Jonathan Fielding",
+        "url": "https://github.com/jonathan-fielding/jQuery-Hover-Panels"
+    },
+    "maintainers": [
+        {
+            "name": "Jonathan Fielding",
+            "url": "http://www.jonathanfielding.com"
+        }
+    ],
+    "licenses": [
+        {
+            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+        }
+    ],
+    "bugs": "https://github.com/jonathan-fielding/jQuery-Hover-Panels/issues",
+    "homepage": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
+    "docs": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
+    "download": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}
