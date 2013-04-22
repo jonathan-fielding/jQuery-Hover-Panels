@@ -25,6 +25,14 @@ The fade level if the chosen effect uses fade
 
 default value = 0.5
 
+####effect
+The effect used by the panels
+
+avaliable options = fadeSiblings, none
+
+default value = fadeSiblings
+
+
 ## Sites where its used
 - http://www.globalservices.bt.com/uk/en/lets_talk - version 1.0
 
@@ -38,6 +46,9 @@ Added flip effect
 
 ### version 2.0
 Complete rewrite to use jQuery Boilerplate as a base. Effects currently limited to fade siblings effect
+
+### version 2.0.1
+Minor bug fixes
 
 ## Licence
 

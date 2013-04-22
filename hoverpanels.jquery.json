@@ -7,7 +7,7 @@
         "alternate",
 		"content"
     ],
-    "version": "2.0.0",
+    "version": "2.0.1",
     "author": {
         "name": "Jonathan Fielding",
         "url": "https://github.com/jonathan-fielding/jQuery-Hover-Panels"
