@@ -7,10 +7,10 @@
         "alternate",
 		"content"
     ],
-    "version": "2.0.1",
+    "version": "2.0.2",
     "author": {
         "name": "Jonathan Fielding",
-        "url": "https://github.com/jonathan-fielding/jQuery-Hover-Panels"
+        "url": "https://www.jonathanfielding.com"
     },
     "maintainers": [
         {
@@ -24,9 +24,9 @@
         }
     ],
     "bugs": "https://github.com/jonathan-fielding/jQuery-Hover-Panels/issues",
-    "homepage": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
-    "docs": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
-    "download": "https://github.com/jonathan-fielding/jQuery-Hover-Panels",
+    "homepage": "http://jonathan-fielding.github.io/jQuery-Hover-Panels/",
+    "docs": "http://jonathan-fielding.github.io/jQuery-Hover-Panels/",
+    "download": "https://github.com/jonathan-fielding/jQuery-Hover-Panels/zipball/master",
     "dependencies": {
         "jquery": ">=1.7"
     }
