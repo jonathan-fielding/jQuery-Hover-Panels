@@ -1,3 +1,7 @@
+// jQuery HoverPanels
+// Author: Jonathan Fielding - http://www.jonathanfielding.com
+// Licence: http://creativecommons.org/licenses/by-sa/3.0/
+
 ;(function ( $, window, document, undefined ) {
 
     var pluginName = "hoverpanels",
@@ -27,17 +31,17 @@
 
         },
         action: function(e){
-            var plugin = $(e.delegateTarget).data("plugin_" + pluginName), 
+            var plugin = $(e.delegateTarget).data("plugin_" + pluginName),
                 activeEvent = e.type;
 
             plugin.effect(this, activeEvent);
-            
+
         },
         effect: function(panel, activeEvent){
             if(this.options.effect === "fadeSiblings"){
                if(activeEvent === "mouseenter"){
                     $(panel).stop(true);
-                    $(panel).siblings().stop(true)
+                    $(panel).siblings().stop(true);
                     $(panel).siblings().fadeTo('',this.options.fade_level);
                     $(panel).fadeTo('','1');
                     $(panel).find(this.options.default_content).hide();
