@@ -9,7 +9,9 @@
             default_content: '.default',
             hover_content: '.hover',
             fade_level: '0.5',
-            effect: 'fadeSiblings'
+            effect: 'fadeSiblings',
+            onMouseenter: function(){},
+            onMouseleave: function(){}
         };
 
     // The actual plugin constructor
@@ -38,6 +40,7 @@
 
         },
         effect: function(panel, activeEvent){
+            //The fade siblings effect fades out the sibling panels while switching the default/hover content on the hovered panel
             if(this.options.effect === "fadeSiblings"){
                if(activeEvent === "mouseenter"){
                     $(panel).stop(true);
@@ -46,23 +49,28 @@
                     $(panel).fadeTo('','1');
                     $(panel).find(this.options.default_content).hide();
                     $(panel).find(this.options.hover_content).show();
+                    this.options.onMouseenter();
                 }
                 else if(activeEvent === "mouseleave"){
                     $(panel).fadeTo('','1');
                     $(panel).siblings().fadeTo('','1');
                     $(panel).find(this.options.default_content).show();
                     $(panel).find(this.options.hover_content).hide();
+                    this.options.onMouseleave();
                 }
             }
             else{
                 if(activeEvent === "mouseenter"){
                     $(panel).find(this.options.default_content).hide();
                     $(panel).find(this.options.hover_content).show();
+                    this.options.onMouseenter();
                 }
                 else if(activeEvent === "mouseleave"){
                     $(panel).find(this.options.default_content).show();
                     $(panel).find(this.options.hover_content).hide();
+                    this.options.onMouseleave();
                 }
+
             }
         }
     };
